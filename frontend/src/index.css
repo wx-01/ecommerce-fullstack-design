@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-border: hsl(var(--border));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-primary-light: hsl(var(--primary-light));
+ --color-primary-brand: hsl(var(--primary-brand));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+}
+
+@layer base {
+  :root {
+    --background: 204 46% 98% ;
+    --foreground: 0 0% 100% ;
+
+    --card: 0 0% 100%;
+
+    --primary: 216 98% 52% ;
+    --primary-light:213 100% 95% ;
+    --primary-brand:216 85% 76%;
+    --primary-foreground: 0 0% 100% ;
+    --border: 0 0% 88% ;
+  }
+}
+
+
+@layer components {
+  .container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+  @media (width >= 640px) {
+    max-width: 640px;
+  }
+  @media (width >= 768px) {
+    max-width: 768px;
+  }
+  @media (width >= 1024px) {
+    max-width: 1024px;
+  }
+  @media (width >= 1280px) {
+    max-width: 1280px;
+  }
+  @media (width >= 1400px) {
+    max-width: 1400px;
+  }
+}
+
+  .button {
+    background: linear-gradient(to right, hsl(212, 100%, 54%, 1), hsl(216, 100%, 50%, 1));
+    color: hsl(var(--primary-foreground));
+    @apply flex items-center justify-center text-base font-medium rounded-sm;
+  }
+  .btn-container {
+    @apply flex items-center justify-center text-base rounded-sm font-medium;
+  }
+ .c-border {
+  border: 1px solid hsl(var(--primary));
+}
+}
+
+
+
