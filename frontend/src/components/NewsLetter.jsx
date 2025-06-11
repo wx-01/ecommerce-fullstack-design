@@ -2,7 +2,7 @@ import React from "react";
 
 const NewsLetter = () => {
   return (
-    <section className=" flex items-center justify-center flex-col bg-gray-200 p-10">
+    <section className=" flex items-center justify-center flex-col bg-gray-200 p-10 mt-4">
       <h1 className="text-xl font-semibold">Subscribe to our newsletter</h1>
       <p className="mb-3 text-sm">Get daily news on upcomming offers from many suppliers all over the world.</p>
       <div className="flex items-center gap-2">

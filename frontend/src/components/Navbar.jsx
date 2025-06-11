@@ -60,19 +60,19 @@ const Navbar = () => {
             <div className="flex  items-center justify-end">
               <div className="flex flex-row items-center justify-between gap-4">
                 <div className="flex flex-col items-center justify-between gap-0.75 ">
-                  <User className="size-4.5 text-gray-500" />
+                  <User className="size-4.5 text-gray-500 fill-current" />
                   <p className="text-[10px] text-gray-500">Profile</p>
                 </div>
                 <div className="flex flex-col  items-center justify-between gap-0.75">
-                  <MessageSquareText className="size-4.5 text-gray-500" />
+                  <MessageSquareText className="size-4.5 text-gray-500 fill-current" />
                   <p className="text-[10px] text-gray-500">Message</p>
                 </div>
                 <div className="flex flex-col  items-center justify-between gap-0.75">
-                  <Heart className="size-4.5 text-gray-500" />
+                  <Heart className="size-4.5 text-gray-500 fill-current" />
                   <p className="text-[10px] text-gray-500">Orders</p>
                 </div>
                 <div className="flex flex-col  items-center justify-between gap-0.75">
-                  <ShoppingCart className="size-4.5 text-gray-500" />
+                  <ShoppingCart className="size-4.5 text-gray-500 fill-current" />
                   <p className="text-[10px] text-gray-500">My Cart</p>
                 </div>
               </div>
