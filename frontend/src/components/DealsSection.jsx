@@ -50,8 +50,8 @@ const items = [
 ]
 const DealsSection = () => {
   return (
-    <secton className="md:mt-4 w-full ">
-      <div className="md:border md:rounded-sm border-gray-200 bg-foreground flex flex-col md:flex-row ">
+    <secton className="md:mt-4 w-full " >
+      <a href="/listing" className="md:border md:rounded-sm border-gray-200 bg-foreground flex flex-col md:flex-row ">
             {/* Left section */}
             <div className="md:w-[230px] md:h-[187px] lg:w-[250px] xl:w-[280px] xl:h-[240px] p-3 md:p-4 ">
                     <h1 className="font-semibold lg:text-lg xl:text-xl">Deals and offers</h1>
@@ -67,7 +67,7 @@ const DealsSection = () => {
                 </div>
               ))}
              </div>
-      </div>
+      </a>
     </secton>
   );
 };

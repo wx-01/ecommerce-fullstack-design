@@ -9,8 +9,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="h-full py-8 pl-10 pr-10 md:pl-18 md:pr-18 lg:pl-26 lg:pr-26 flex items-center gap-10 bg-foreground">
+    <footer className="bg-foreground hidden md:block">
+      <div className="h-full py-8 ml-10 mr-10 md:ml-18 md:mr-18 lg:ml-26 lg:mr-26 flex items-center justify-between gap-10 ">
         <div className=" flex flex-col gap-2">
           {/* Logo */}
           <div className="w-28 flex  flex-row items-center">

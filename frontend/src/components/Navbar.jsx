@@ -86,11 +86,11 @@ const Navbar = () => {
             <div className="flex flex-row">
               <MenuIcon className="size-5 mr-1" />
               <div className="flex items-center justify-between gap-1 md:gap-5 text-sm ">
-                <h2>All category</h2>
-                <h2>Hot offers</h2>
-                <h2>Gift boxes</h2>
-                <h2>Projects</h2>
-                <h2>Menu item</h2>
+                <a href="/listing">All category</a>
+                <a href="/listing">Hot offers</a>
+                <a href="/listing">Gift boxes</a>
+                <a href="/listing">Projects</a>
+                <a href="/listing">Menu item</a>
                 <select name="" id="" className="outline-none">
                   <option value="">Help</option>
                   <option value="dog">Dog</option>

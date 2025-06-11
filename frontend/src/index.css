@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+@plugin "daisyui" {
+  themes: false;
+}
 
 @theme {
   --color-border: hsl(var(--border));
@@ -61,7 +63,9 @@
  .c-border {
   border: 1px solid hsl(var(--primary));
 }
+
 }
-
-
+.checkbox{
+  --size: 1.25rem;
+}
 

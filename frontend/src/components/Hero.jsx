@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="hidden w-full lg:w-1/4 lg:flex  lg:justify-start">
           <div className="flex flex-col gap-1 w-full">
             {categories.map((category) => (
-              <a
+              <a href="/listing"
                 key={category}
                 onClick={() => setSelectedCategory(category)}
                 className={`border rounded-sm border-foreground px-2 py-1  text-sm xl:text-[17px]

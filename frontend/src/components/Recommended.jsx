@@ -106,29 +106,29 @@ const Recommended = () => {
   return (
     <secton className="md:mt-4 w-full ">
       {/* Heading */}
-      <h1 className="font-semibold lg:text-lg xl:text-xl">Recommended items</h1>
+      <h1 className="font-semibold lg:text-lg xl:text-xl px-2 py-2">Recommended items</h1>
       {/* items section */}
       <div className=" md:rounded-sm border-gray-200 flex flex-col md:flex-row ">
-        <div className="w-full md:grid md:grid-cols-5 gap-4">
+        <div className="w-full grid grid-cols-2 md:grid-cols-5 gap-4 p-3 md:p-0">
           {items.map((item) => (
-            <div
+            <a href="/listing"
               key={item.id}
-              className=" flex bg-foreground  flex-col  justify-center rounded-sm border  p-1 lg:p-2 border-gray-200"
+              className=" flex bg-foreground  flex-col  justify-center rounded-sm border  p-2 lg:p-2 border-gray-200"
             >
-              <div className=" md:pt-3 ">
+              <div className=" md:pt-3 flex justify-center">
                 <img
                   src={item.image}
                   alt=""
-                  className="size-40  object-contain "
+                  className="size-20 md:size-40  object-contain "
                 />
               </div>
               <div className="lg:mb-2">
                 <p className="text-sm font-semibold pt-2">${item.price}</p>
-                <p className="md:text-sm text-gray-500 pt-2">
+                <p className="md:text-sm text-gray-500 pt-2 text-wrap">
                   {item.description}
                 </p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
