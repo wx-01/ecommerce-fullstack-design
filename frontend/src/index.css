@@ -1,7 +1,5 @@
 @import "tailwindcss";
-@plugin "daisyui" {
-  themes: false;
-}
+
 
 @theme {
   --color-border: hsl(var(--border));
@@ -63,9 +61,35 @@
  .c-border {
   border: 1px solid hsl(var(--primary));
 }
+.AccordionChevron {
+	transition: transform 300ms;
+}
+
+[data-state="open"] .AccordionChevron {
+  transform: rotate(180deg);
+  transition: transform 0.2s;
+}
+button {
+	all: unset;
+}
+
+.CheckboxRoot {
+	background-color: white;
+	width: 17px;
+	height: 17px;
+  border: 2px solid hsl(var(--border));
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  
+}
+.CheckboxRoot[data-state="checked"] {
+  background-color: hsl(var(--primary));
+  border-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));}
+
 
 }
-.checkbox{
-  --size: 1.25rem;
-}
+
 
